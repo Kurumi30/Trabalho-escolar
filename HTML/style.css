@@ -1,6 +1,8 @@
 @import url("http://fonts.cdnfonts.com/css/sansation");
-@import url("https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&display=swap");
-/*@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap');*/
+/*@import url("https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
 
 * {
     margin: 0;
@@ -20,16 +22,16 @@ body {
 }
 
 .title {
-    font-family: "Scheherazade New", serif;
+    font-family: "Ubuntu", serif;
     font-size: 3rem;
     font-weight: bold;
     text-align: center;
     margin: 1rem 0;
-    color: rgb(18, 32, 77) ;
+    color: rgb(18, 32, 77);
 }
 
 .paragraph {
-    font-family: "Sansation", serif;
+    font-family: "Bitter", serif;
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -37,19 +39,22 @@ body {
     margin-inline-end: 0px;
 }
 
-.paragraph2 {
+/*.paragraph2 {
     font-family: "Sansation", serif;
     display: block;
     margin-right: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+}*/
+.first, .first1 {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    margin: 1rem;
+
 }
 
 .first {
-    background-color: #f5f5f5;
-    padding: 1rem;
-    margin: 1rem;
     border-radius: 1rem;
     box-shadow: 0 0 1rem #000000;
     display: block;
@@ -57,18 +62,18 @@ body {
     height: 100%;
 }
 
-.second {
-    background-color: #f5f5f5;
-    padding: 1rem;
-    margin: 1rem;
+.first1 {
     border-radius: 1rem;
     box-shadow: 0 0 1rem #000000;
     display: block;
     width: 34%;
+    position: relative;
+    left: 60%;
     height: 100%;
+    bottom: auto;
 } 
 
-.footer {
+/*.footer {
     position: absolute;
     bottom: 0;
     left: 45%;
@@ -77,4 +82,47 @@ body {
     margin-top: auto;
     color: #082642;
     font-weight: bold;
+}*/
+
+/*Tablets*/
+@media  screen and (max-width: 768px) {
+    body {
+        background: linear-gradient(138.56deg, #318adc 23.44%, #88183a 89.5%);
+        background-attachment: fixed;
+    }
+    .first {
+        background-color: #f5f5f5;
+        padding: 1rem;
+        margin: 0;
+        border-radius: 1rem;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .first1 {
+        padding: 1rem;
+        margin: 0;
+        border-radius: 1rem;
+        display: block;
+        width: 100%;
+        position: relative;
+        left: 0;
+        height: 100%;
+        bottom: auto;
+    }
+    .first, .first1 {
+        padding-bottom: 1rem;
+        margin-bottom: 0.8rem;
+        font-size: 20px;
+    }
+    .title {
+        font-size: 3rem;
+        font-weight: bold;
+        text-align: center;
+        margin: 1rem 0;
+    }
+}
+
+/*Celulares*/
+@media  screen and (max-width: 600px) {
 }

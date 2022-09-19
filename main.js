@@ -9,10 +9,11 @@ function redirect() {
     let password = document.getElementsByClassName('pass-input');
 
     if(username[0].value == "Rita" && password[0].value == "1234567890") {
-        alert("Login realizado com sucesso!");
+        alert("Seja bem vindo!");
+        confirm("Esse é o meu projeto! Espero que goste, professor(a) " + username[0].value + "!");
         window.location.href = "./HTML/index2.html";
     } else {
-        alert("Usuário ou senha incorretos");
+        alert("Usuário ou senha incorretos, por favor tente novamente!");
     }
 }
 

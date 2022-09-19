@@ -104,6 +104,7 @@ button {
     border: none;
     background: rgba(135, 113, 224, 0.89);
     border-radius: 25px;
+    opacity: 0.8;
 }
 
 .link {
